@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <title>Kaiyla's About Me</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+			font-family: 'Nunito', sans-serif;
+			line-height: 1.6; /* Optional: improves readability for long paragraphs */
+            background-color: #f8c6d6; /* Light pink background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+			font-family: 'Quicksand', sans-serif;
+            background-color: #ffb6c1; /* Slightly darker pink */
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+		nav a, .content a {
+			text-decoration: none;
+			color: #ff69b4; /* Hot Pink */
+			padding: 10px 10px;
+			font-weight: bold;
+		}
+
+		nav a:hover, .content a:hover {
+			color: #ff1493; /* Darker Pink for hover effect */
+		}
+        .content {
+            padding: 20px;
+        }
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            justify-content: center;
+            padding: 10px;
+        }
+        .character-grid img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+        .character-grid div {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #ffb6c1;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #6F9A6E;
+        }
+        .small-melody {
+            width: 100px;
+            height: auto;
+            position: fixed;
+            bottom: 10px;
+            z-index: 100;
+        }
+        .melody-left {
+            left: 10px;
+        }
+        .melody-right {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kaiyla's Blog</h1>
+        <nav>
+			<a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+			<a href="contact.html">Contact</a>
+			<a href="about.html">About Legion</a>
+			<a href="blog.html">Blog</a>
+        </nav>
+	</header>
+	<div class="container">
+        <h2>About My Legion Characters</h2>
+        <p>Content about your Legion characters goes here...</p>
+    </div>
+
+    <footer>
+        <img src="images/stickerL.png" alt="My Melody" class="small-melody melody-left">
+        <img src="images/stickerR.png" alt="My Melody" class="small-melody melody-right">
+        <p>&copy; 2024 Kaiyla. All rights reserved.</p>
+    </footer>
+</body>
+</html>
