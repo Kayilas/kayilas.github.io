@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <title>Kaiyla's Blog</title>
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <style>
         body {
             font-family: 'Nunito', sans-serif;
-			line-height: 1.6; /* Optional: improves readability for long paragraphs */
+            line-height: 1.6;
             background-color: #f8c6d6;
             color: #333;
             margin: 0;
@@ -17,33 +17,33 @@
             text-align: center;
         }
         header {
-			font-family: 'Quicksand', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             background-color: #ffb6c1;
-            padding: 10px; /* Adjusted padding to reduce header size */
+            padding: 10px;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
         h1 {
             margin: 0;
-            font-size: 1.5rem; /* Adjusted font size for better fit */
+            font-size: 1.5rem;
         }
         nav a {
-			display: inline-block;
+            display: inline-block;
             text-decoration: none;
-            color: #ff69b4; /* Hot Pink */
-            padding: 5px 10px; /* Reduced padding for nav links */
+            color: #ff69b4;
+            padding: 5px 10px;
             font-weight: bold;
-			font-size: 1rem; /* Adjusted font size for better fit */
+            font-size: 1rem;
         }
         nav a:hover {
-            color: #ff1493; /* Darker Pink for hover effect */
+            color: #ff1493;
         }
         .container {
-            width: 90%; /* Adjusted width for better mobile fit */
+            width: 90%;
             margin: 0 auto;
             padding: 1rem;
-            box-sizing: border-box; /* Includes padding in the width calculation */
+            box-sizing: border-box;
         }
         .content {
             padding: 20px;
@@ -52,9 +52,9 @@
             position: fixed;
             top: 10px;
             left: 10px;
-            width: 80px; /* Adjusted size for better mobile fit */
+            width: 80px;
             height: auto;
-            z-index: 1000; /* Ensure it’s on top of other content */
+            z-index: 1000;
         }
         footer {
             background-color: #ffb6c1;
@@ -63,6 +63,45 @@
             bottom: 0;
             color: #6F9A6E;
         }
+        .blog-post-preview {
+			margin-bottom: 20px;
+			padding: 20px;
+			background-color: #e0f2f1; /* Light Mint Green */
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		}
+        .blog-post-preview h2 {
+            font-size: 1.25rem;
+        }
+        .blog-post-preview p {
+            margin: 0 0 10px;
+        }
+        .blog-post-preview a {
+            text-decoration: none;
+            color: #ff69b4;
+            font-weight: bold;
+        }
+        .blog-post-preview a:hover {
+            color: #ff1493;
+        }
+		.old-blog-button {
+			margin-top: 20px;
+			text-align: center;
+		}
+		.old-blog-button a {
+			display: inline-block;
+			padding: 10px 20px;
+			font-size: 1rem;
+			color: #4B0082; /* Button text color */
+			background-color: #ff69b4; /* Button background color */
+			text-decoration: none;
+			border-radius: 5px; /* Rounded corners */
+			box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Adds a subtle shadow */
+			transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+		}
+		.old-blog-button a:hover {
+			background-color: #ff1493; /* Darker pink for hover effect */
+		}
     </style>
 </head>
 <body>
@@ -74,6 +113,7 @@
 			<a href="contact.html">Contact</a>
 			<a href="about.html">About Legion</a>
 			<a href="blog.html">Blog</a>
+			<a href="daily.html">Daily List</a>
         </nav>
     </header>
 
@@ -81,48 +121,35 @@
 
     <div class="container">
         <section id="blog">
-             <h2>My Love for Legion Maining</h2>
-            <div class="blog-post">
-                <p>Ever since I started my journey in <strong>MapleStory</strong>, I’ve been absolutely captivated by the thrill of Legion maining. There’s something incredibly satisfying about leveling up all your characters and watching your Legion level rise with each milestone. It’s not just about the grind; it’s about the sense of achievement and the joy of seeing all my characters working together.</p>
-
+            <div class="blog-post-preview">
+                <h2><a href="blogs/post1.html">My Love for Legion Maining</a></h2>
+                <p>Ever since I started my journey in <strong>MapleStory</strong>, I’ve been absolutely captivated by the thrill of Legion maining. There’s something incredibly satisfying about leveling up all your characters and watching your Legion level rise with each milestone...</p>
                 <img src="images/legion-level-up.jpg" alt="Legion Level Up">
-
-                <p>One of the highlights of my Legion maining experience is definitely the progress I've made with my characters. Grinding through the levels can be a bit of a challenge, but the reward of seeing my Legion level go up is well worth it. I love how each character contributes to my overall Legion, and it feels amazing to see my hard work pay off.</p>
-
-                <img src="images/legion-characters.jpg" alt="Legion Characters">
-
-                <p>Another aspect I enjoy is the community and camaraderie that comes with Legion maining. Connecting with other players who share the same passion for leveling up and improving their Legion makes the journey even more enjoyable. We share tips, celebrate achievements, and support each other through the grind.</p>
-
-                <img src="images/legion-progress.jpg" alt="Legion Progress">
-
-                <p>Of course, it’s not always smooth sailing. There are tough moments and challenges, especially when pushing for higher Legion levels. But overcoming these obstacles and reaching new heights is incredibly rewarding. The sense of accomplishment and pride in my progress keeps me motivated to continue my Legion adventure.</p>
-			<div class="divider">
-				<img src="images/divider-line2.png" alt="Divider Line">
             </div>
-			<div class="blog-post">
-			<h2>My Love for Legion Maining</h2>
-                <p>Playing <strong>MapleStory</strong> has been a highlight of my gaming journey, and I wanted to share some of my favorite moments. From epic boss battles to unforgettable events, there’s always something exciting happening in the game.</p>
-
-                <img src="images/maple-boss-battle.jpg" alt="Epic Boss Battle">
-
-                <p>One of my favorite memories is the first time I took down a major boss with my Legion characters. The coordination and strategy required were intense, but the sense of accomplishment was absolutely worth it. Each boss battle is a unique challenge, and overcoming them with a well-prepared team makes the victory even sweeter.</p>
-				<p>Another highlight has been participating in special in-game events. These events often bring together players from all over the world, and the community aspect adds a whole new layer of fun. Whether it’s a seasonal event or a unique challenge, these moments are always a blast.</p>
-
-                <img src="images/maple-event.jpg" alt="In-Game Event">
-
-                <p>Of course, it’s not just about the big moments. Sometimes, the little things—like discovering a new area or completing a challenging quest—are what make the game truly special. These small victories keep me engaged and motivated to continue exploring the world of *MapleStory*.</p>
-
             <div class="divider">
-                <img src="images/divider-line2.png" alt="Divider Line">
+                <img src="images/divider-line2.png" alt="Divider">
             </div>
-
-                <p>As I continue my journey in *MapleStory*, I look forward to more adventures, more victories, and more cherished moments. The game has been a fantastic part of my life, and I’m excited to see what’s next in this ever-evolving world.</p>
-			</div>
+            <div class="blog-post-preview">
+                <h2><a href="blogs/post2.html">Epic Boss Battles in MapleStory</a></h2>
+                <p>Playing <strong>MapleStory</strong> has been a highlight of my gaming journey, and I wanted to share some of my favorite moments. From epic boss battles to unforgettable events, there’s always something exciting happening in the game...</p>
+                <img src="images/maple-boss-battle.jpg" alt="Epic Boss Battle">
+            </div>
+            <div class="divider">
+                <img src="images/divider-line2.png" alt="Divider">
+            </div>
+            <div class="blog-post-preview">
+                <h2><a href="blogs/post3.html">Why I stagger my Monster Park!</a></h2>
+                <p>Howdey I sometimes (not commonly) get asked why I stagger my monsterpark runs by running one run on seven different characters...</p>
+                <img src="images/maple-boss-battle.jpg" alt="MP List">
+            </div>
         </section>
     </div>
 
     <footer>
         <p>&copy; 2024 Kaiyla. All rights reserved.</p>
+		<div class="old-blog-button">
+			<a href="old-blog.html">Visit My Old Blog</a>
+		</div>
     </footer>
 </body>
 </html>

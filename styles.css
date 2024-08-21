@@ -1,0 +1,119 @@
+/* General styles */
+/*Most of this is unused*/
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    background-color: #f8c6d6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ffb6c1;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff69b4;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff1493;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Section styles */
+.section {
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #6F9A6E;
+}
+
+/* Divider styles */
+.divider {
+    width: 2px;
+    background-color: #6F9A6E;
+    height: auto;
+    margin: 0 20px;
+}
+
+/* Checklist styles with Flexbox */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+li {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #ff69b4; /* Hot Pink for checked state */
+}
+
+/* Footer styles */
+footer {
+    background-color: #ffb6c1;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #6F9A6E;
+}
+
+/* Melody image styles */
+.small-melody {
+    width: 100px;
+    height: auto;
+    position: fixed;
+    bottom: 10px;
+    z-index: 100;
+}
+
+.melody-left {
+    left: 10px;
+}
+
+.melody-right {
+    right: 10px;
+}

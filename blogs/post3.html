@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <title>Blog Post Title</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.6;
+            background-color: #f8c6d6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #ffb6c1;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: #ff69b4;
+            padding: 5px 10px;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            color: #ff1493;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+        .content {
+            padding: 20px;
+        }
+        .my-melody-fixed {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            height: auto;
+            z-index: 1000;
+        }
+        footer {
+            background-color: #ffb6c1;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            color: #6F9A6E;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kaiyla's Blog</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../aboutme.html">About Me</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../about.html">About Legion</a>
+            <a href="../blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <img src="../images/stickerL.png" alt="My Melody" class="my-melody-fixed">
+
+    <div class="container">
+        <section class="content">
+            <h2>Blog Post Title</h2>
+            <p>Full blog post content goes here...</p>
+            <img src="images/full-post-image.jpg" alt="Post Image">
+            <p>More content here...</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Kaiyla. All rights reserved.</p>
+    </footer>
+</body>
+</html>
