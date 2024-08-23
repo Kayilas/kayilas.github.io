@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <title>Kaiyla's Contacts</title>
+    <title>Image Redirects</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <style>
         body {
             font-family: 'Nunito', sans-serif;
-            line-height: 1.6; /* Improves readability for long paragraphs */
+            line-height: 1.6;
             background-color: #f8c6d6; /* Light pink background */
             color: #333;
             margin: 0;
@@ -24,17 +24,32 @@
             top: 0;
             z-index: 1000;
         }
-        nav a {
+        nav a, .content a {
             text-decoration: none;
             color: #ff69b4; /* Hot Pink */
-            padding: 10px;
+            padding: 10px 10px;
             font-weight: bold;
         }
-        nav a:hover {
+        nav a:hover, .content a:hover {
             color: #ff1493; /* Darker Pink for hover effect */
         }
         .content {
             padding: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
         }
         footer {
             background-color: #ffb6c1;
@@ -61,30 +76,29 @@
 </head>
 <body>
     <header>
-        <h1>Kaiyla's Contact</h1>
+        <h1>Image Redirects</h1>
         <nav>
-			<a href="index.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="aboutme.html">About Me</a>
-			<a href="contact.html">Contact</a>
-			<a href="about.html">About Legion</a>
-			<a href="blog.html">Blog</a>
-			<a href="daily.html">Daily List</a>
-			<a href="daily-list.html">Daily Notices</a>			
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Legion</a>
+            <a href="blog.html">Blog</a>
+            <a href="daily.html">Daily List</a>
+            <a href="game/game-base.html">Old Games</a>
+			<a href="daily-list.html">Daily Notices</a>
         </nav>
     </header>
-
     <div class="content">
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <p>You can reach me through the following channels:</p>
-            <ul style="list-style: none; padding: 0;">
-                <li><strong>Discord:</strong> Kaiyla#1234</li>
-                <li><strong>Email:</strong> kaiyla@example.com</li>
-                <!-- Add more contact methods if needed -->
-            </ul>
-        </section>
+        <h2>Click on an Image to Navigate</h2>
+        <div class="image-container">
+            <a href="game-base.html">
+                <img src="images/image1.png" alt="Image 1">
+            </a>
+            <a href="page2.html">
+                <img src="images/image2.png" alt="Image 2">
+            </a>
+        </div>
     </div>
-
     <footer>
         <img src="images/stickerL.png" alt="My Melody" class="small-melody melody-left">
         <img src="images/stickerR.png" alt="My Melody" class="small-melody melody-right">
